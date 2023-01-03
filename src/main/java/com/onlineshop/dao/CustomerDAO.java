@@ -14,5 +14,5 @@ public interface CustomerDAO {
 	
 	public Customer getCustomerById(int id);
 	
-//	public Customer registerNewCustomer(CustomerInfo customerInfo);
+	public Customer registerNewCustomer(CustomerInfo customerInfo);
 }
