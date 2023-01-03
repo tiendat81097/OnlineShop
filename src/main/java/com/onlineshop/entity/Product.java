@@ -36,7 +36,7 @@ public class Product {
 	private int quantity;
 	
 	@Lob
-	@Column(name="Image", length = Integer.MAX_VALUE, nullable = true)
+	@Column(name = "Image", length = Integer.MAX_VALUE, nullable = true)
 	private byte[] image;
 	
 	@Temporal(TemporalType.TIMESTAMP)
@@ -44,15 +44,16 @@ public class Product {
 	private Date createDate;
 	
 	@ManyToOne
-	@JoinColumn(name="CATEGORY_ID", foreignKey = @ForeignKey(name = "CATEGORY_PRO_FK"))
+	@JoinColumn(name="CATEGORY_ID", foreignKey = @ForeignKey(name="CATEGORY_PRO_FK"))
 	private Category category;
 	
 	@ManyToOne
-	@JoinColumn(name="PRODUCER_ID", foreignKey = @ForeignKey(name = "PRODUCER_PRO_FK"))
+	@JoinColumn(name="PRODUCER_ID", foreignKey = @ForeignKey(name="PRODUCER_PRO_FK"))
 	private Producer producer;
 	
 	@OneToOne(mappedBy = "product", cascade = CascadeType.ALL)
 	private ProductDetail detail;
+	
 	
 	public Product(String code, String name, double price, int quantity, byte[] image, Date createDate,
 			Category category, Producer producer) {

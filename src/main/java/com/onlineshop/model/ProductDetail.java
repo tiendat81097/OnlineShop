@@ -12,6 +12,20 @@ public class ProductDetail {
 	
 	private String specification;
 
+	public ProductDetail(int id, String insurance, double weight, String color, String specification) {
+		super();
+		this.id = id;
+		this.insurance = insurance;
+		this.weight = weight;
+		this.color = color;
+		this.specification = specification;
+	}
+	
+	public ProductDetail() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getId() {
 		return id;
 	}

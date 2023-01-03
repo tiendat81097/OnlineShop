@@ -26,7 +26,7 @@ public class Category {
 
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "category", cascade={CascadeType.ALL})
 	private List<Product> list;
-	
+
 	public int getId() {
 		return id;
 	}
@@ -50,8 +50,5 @@ public class Category {
 	public void setList(List<Product> list) {
 		this.list = list;
 	}
-	
-	
-	
 }
 
