@@ -14,7 +14,7 @@ public interface ProductDAO {
 	
 	public PaginationResult<ProductInfo> getAllProductInfos(int page, int maxResult);
 	
-	public PaginationResult<ProductInfo> getProductByName(int page, int maxResult);
+	public PaginationResult<ProductInfo> getProductByName(int page, int maxResult, String name);
 	
 	public PaginationResult<ProductInfo> getProductInfosByCategory(int page, int maxResult,String categoryName, String producerName);
 	
@@ -28,5 +28,9 @@ public interface ProductDAO {
 	
 	public List<Category> getAllCategory();
 	
+	public Category getCategoryByName(String name);
+	
 	public List<Producer> getAllProducer();
+	
+	public Producer getProducerByName(String name);
 }

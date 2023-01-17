@@ -1,7 +1,6 @@
 package com.onlineshop.entity;
 
 import java.util.Date;
-import java.util.Locale.Category;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -16,7 +15,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import com.onlineshop.model.ProductDetail;
+import com.onlineshop.entity.ProductDetail;
 
 @Entity
 @Table(name = "Products")
