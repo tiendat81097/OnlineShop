@@ -2,6 +2,7 @@ package com.onlineshop.dao;
 
 import java.util.List;
 
+import com.onlineshop.entity.Order;
 import com.onlineshop.model.CartInfo;
 import com.onlineshop.model.OrderDetailInfo;
 import com.onlineshop.model.OrderInfo;
