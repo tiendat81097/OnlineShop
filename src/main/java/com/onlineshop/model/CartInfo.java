@@ -65,4 +65,44 @@ public class CartInfo {
 		if(cartLineInfo != null)
 			this.cartLineInfos.remove(cartLineInfo);
 	}
+	
+	public void updateProduct(String code, int quantity) {
+		CartLineInfo cartLineInfo = getCartLineInfoByCode(code);
+		if(cartLineInfo != null) {
+			if(quantity <= 0)
+				this.cartLineInfos.remove(cartLineInfo);
+			else
+				cartLineInfo.setQuantity(quantity);
+		}
+	}
+	
+	public boolean isEmpty() {
+		return this.cartLineInfos.isEmpty();
+	}
+	
+	public boolean isValidCustomer() {
+		return this.customerInfo != null && this.customerInfo.isValid();
+	}
+	
+	public int getQuantityTotal() {
+		int quantity = 0;
+		for(CartLineInfo cartLineInfo : cartLineInfos)
+			quantity += cartLineInfo.getQuantity();
+		return quantity;
+	}
+	
+	public double getAmountTotal() {
+		double amount = 0;
+		for(CartLineInfo cartLineInfo : cartLineInfos)
+			amount += cartLineInfo.getAmount();
+		return amount;
+	}
+	
+	public void updateQuantity(CartInfo cartInfo) {
+		if(cartInfo != null) {
+			List<CartLineInfo> cartLineInfos = cartInfo.getCartLineInfos();
+			for(CartLineInfo cartLineInfo : cartLineInfos)
+				updateProduct(cartLineInfo.getProductInfo().getCode(), cartLineInfo.getQuantity());
+		}
+	}
 }
