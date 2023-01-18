@@ -88,7 +88,7 @@ public class OrderDaoImpl implements OrderDAO{
 	}
 
 	@Override
-	public Order getOrderInfoByI(String orderId) {
+	public OrderInfo getOrderInfoById(String orderId) {
 		// TODO Auto-generated method stub
 		Session session = sessionFactory.getCurrentSession();
 		String hql = "SELECT ORD FROM ORDER ORD WHERE ORD.ID = :ORDERID";
