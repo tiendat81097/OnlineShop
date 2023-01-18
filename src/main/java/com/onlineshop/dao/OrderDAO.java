@@ -11,7 +11,7 @@ import com.onlineshop.model.PaginationResult;
 public interface OrderDAO {
 	public void saveOrder(CartInfo cartInfo);
 	
-	public Order getOrderInfoByI(String orderId);
+	public OrderInfo getOrderInfoById(String orderId);
 	
 	public PaginationResult<OrderInfo> getAllOrderInfo(int page, int maxResult);
 	
