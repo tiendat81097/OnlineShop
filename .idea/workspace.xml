@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e87a1fd-876e-4b28-acd8-04ec850352d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlineshop/authentication/MyDBAuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlineshop/authentication/MyDBAuthenticationService.java" afterDir="false" />
+    <list default="true" id="5e87a1fd-876e-4b28-acd8-04ec850352d3" name="Default Changelist" comment="Service">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,11 +62,34 @@
       <updated>1674055775722</updated>
       <workItem from="1674055777973" duration="91000" />
       <workItem from="1674055887685" duration="25000" />
-      <workItem from="1674055933136" duration="833000" />
+      <workItem from="1674055933136" duration="1373000" />
     </task>
+    <task id="LOCAL-00001" summary="Service">
+      <created>1674057035164</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674057035164</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Service" />
   </component>
 </project>
