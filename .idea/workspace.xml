@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e87a1fd-876e-4b28-acd8-04ec850352d3" name="Default Changelist" comment="Order Service Implement">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlineshop/dao/impl/OrderDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlineshop/dao/impl/OrderDaoImpl.java" afterDir="false" />
-    </list>
+    <list default="true" id="5e87a1fd-876e-4b28-acd8-04ec850352d3" name="Default Changelist" comment="Order DAO Implement" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +60,7 @@
       <updated>1674055775722</updated>
       <workItem from="1674055777973" duration="91000" />
       <workItem from="1674055887685" duration="25000" />
-      <workItem from="1674055933136" duration="2300000" />
+      <workItem from="1674055933136" duration="2501000" />
     </task>
     <task id="LOCAL-00001" summary="Service">
       <created>1674057035164</created>
@@ -120,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674058157851</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Order DAO Implement">
+      <created>1674058275768</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674058275768</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,8 +148,8 @@
     <MESSAGE value="Customer Service" />
     <MESSAGE value="Customer Service Implement" />
     <MESSAGE value="Order DAO" />
-    <MESSAGE value="Order DAO Implement" />
     <MESSAGE value="Order Service Implement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Order Service Implement" />
+    <MESSAGE value="Order DAO Implement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Order DAO Implement" />
   </component>
 </project>
