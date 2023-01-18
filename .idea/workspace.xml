@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e87a1fd-876e-4b28-acd8-04ec850352d3" name="Default Changelist" comment="Service">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5e87a1fd-876e-4b28-acd8-04ec850352d3" name="Default Changelist" comment="Account Service Implement">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/onlineshop/service/CutomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/onlineshop/service/CustomerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,7 @@
       <updated>1674055775722</updated>
       <workItem from="1674055777973" duration="91000" />
       <workItem from="1674055887685" duration="25000" />
-      <workItem from="1674055933136" duration="1373000" />
+      <workItem from="1674055933136" duration="1626000" />
     </task>
     <task id="LOCAL-00001" summary="Service">
       <created>1674057035164</created>
@@ -71,7 +71,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674057035164</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Account Service Implement">
+      <created>1674057361120</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674057361120</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Account Service Implement">
+      <created>1674057369356</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674057369356</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,6 +104,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Service" />
+    <MESSAGE value="Account Service Implement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Account Service Implement" />
   </component>
 </project>
