@@ -3,6 +3,7 @@ package com.onlineshop.authentication;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.onlineshop.service.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -30,7 +31,6 @@ public class MyDBAuthenticationService implements UserDetailsService {
 		if (account == null) {
 			throw new UsernameNotFoundException("User " + username + " was not found in the database");
 		}
-
 
 		String roleName = accountService.getAccountRoleName(account.getRole().getId());
 		List<GrantedAuthority> grantList = new ArrayList<>();
