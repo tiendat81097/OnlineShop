@@ -87,15 +87,28 @@ public class OrderDaoImpl implements OrderDAO{
 		session.flush();
 	}
 
-	@Override
-	public OrderInfo getOrderInfoById(String orderId) {
-		// TODO Auto-generated method stub
+	public Order GetOrderById(String orderId) {
 		Session session = sessionFactory.getCurrentSession();
 		String hql = "SELECT ORD FROM ORDER ORD WHERE ORD.ID = :ORDERID";
 		Query<Order> query = session.createQuery(hql);
 		query.setParameter("ORDERID", orderId);
 		Order order = (Order) query.uniqueResult();
 		return order;
+	}
+
+	@Override
+	public OrderInfo getOrderInfoById(String orderId) {
+		// TODO Auto-generated method stub
+		Order order = GetOrderById(orderId);
+		if(order == null) {
+			return null;
+		}
+
+		CustomerInfo customerInfo = new CustomerInfo(order.getCustomer().getFullName(), order.getCustomer().getAddress(), order.getCustomer().getEmail(),
+
+				order.getCustomer().getPhone());
+		OrderInfo orderInfo = new OrderInfo(order.getId(), order.getOrderDate(), order.getOrderNum(), order.getAmount(), customerInfo);
+		return orderInfo;
 	}
 
 	@Override
